@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h{
+            text-align: center;
+            color: bisque;
+        }
+        form{
+            text-align: center;
+            background-color: rgba(255,255,255,0.5 );
+            margin-left: 25%;
+            width: 60%;
+            padding: 4% 2%;
+           
+            
+        }
+        .td1{
+            display: block;
+            margin-top: 20px;
+            text-align: justify;
+        }
+        body{
+            background-image: url(https://uploads-ssl.webflow.com/63df3f516f6eddc51368bce8/64a6c35d2bcbd2c194bf0e9c_free-cardboard-boxes.png);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h">Purchase form for Land of boxes & CO.</h1>
+    <form action="" method="post" enctype="">
+        
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" ></td>
+            </tr>
+            <tr>
+                <td>Contact no.</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea maxlength="150"></textarea></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="td1"><b>Product Details</b></td>
+                <td class="td1">1.Econo box: cost Rs 5<input type="radio" name="Product Details"></td>
+                <td class="td1">2.Standard box: cost Rs 15<input type="radio" name="Product Details"></td>
+                <td class="td1">3.Premium box: cost Rs 15<input type="radio" name="Product Details"></td>
+                <td class="td1">4.Deluxe box: cost Rs 20<input type="radio" name="Product Details"></td>
+                <td class="td1">5.Super Deluxe box: cost Rs 30<input type="radio" name="Product Details"></td>
+            </tr>
+                <tr>
+                <td>Quantity</td>
+                <td><input type="number"></td>
+            </tr>
+                 <tr>
+                    <td><select name="">
+                        <option>Select payment mode</option>
+                        <option>Debit card</option>
+                        <option>Credit card</option>
+                    </select></td>
+                 </tr>
+                 <tr>
+                    <td>If debit Card</td>
+                    <td><input type="number" placeholder="card number"></td>
+                    <td><input type="date" placeholder="expiry date"></td>
+                 </tr>
+                 <tr>
+                    <td>If Credit Card</td>
+                    <td><input type="number" placeholder="card number"></td>
+                    <td><input type="date" placeholder="expiry date"></td>
+                 </tr>
+                 <tr>
+                    <td>Billing Address and Delivery Address (If different)</td>
+                    <td><textarea maxlength="200" placeholder="Billing address"></textarea></td>
+                    <td><textarea maxlength="200" placeholder="Delivery address"></textarea></td>
+                 </tr>
+                 <tr>
+                    <td>
+                        <input type="submit">
+                    </td>
+                 </tr>
+        </table>
+        
+    </form>
+
+</body>
+</html>
