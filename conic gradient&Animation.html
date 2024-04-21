@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-image: conic-gradient(red 0deg,red 90deg,green 90deg,green 360deg);
+            height: 500px;
+            width: 500px;
+            border-radius: 100%;
+            position: absolute;
+            animation-name: robert;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes robert{
+            0%{transform: rotate(360deg);}
+            
+        }
+        .div1{
+            background-image: conic-gradient(red 0deg,red 90deg,green 90deg,green 360deg);
+            height: 500px;
+            width: 500px;
+            border-radius: 100%;
+            position: relative;
+            animation-name: oral;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes oral{
+            0%{transform: rotate(20deg);left: 90px;}
+            10%{transform: rotate(40deg);left: 160px;}
+            30%{transform: rotate(60deg);left: 390px;}
+            40%{transform: rotate(80deg);left: 630px;}
+            50%{transform: rotate(100deg);left: 1000px;}
+            60%{transform: rotate(160deg);left: 1250px;}
+            70%{transform: rotate(260deg);left: 1500px;}
+            100%{transform: rotate(360deg);left: 1800px;}
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+    <div class="div1">
+
+    </div>
+</body>
+</html>
