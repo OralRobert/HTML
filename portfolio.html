@@ -37,7 +37,7 @@
             width: 20%;
         }
         .div7{
-            background-color: rgb(8, 7, 7);
+            background-color: rgb(7, 7, 8);
             color: white;
             text-align: justify;
             width: 33%;
@@ -45,6 +45,7 @@
         .p1{
             text-align: justify;
             width: 20%;
+            color: green;
         }
         img{
             float:right;
@@ -62,16 +63,46 @@
         b{
             display: block;
         }
-        body{
-            background-image:url(https://png.pngtree.com/background/20220714/original/pngtree-simple-and-fresh-series-light-blue-resume-background-blue-picture-image_1610943.jpg);
-            background-size: 50%;
-        }
         h3{
             color: blanchedalmond;
+           
         }
-    </style>
+        button{
+            border: none;
+            background: #045f71;
+            padding: 10px 60px;
+            color: white;
+            
+        }
+        button:hover{
+            border: 2px solid green;
+        }
+        video{
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+        div{
+            color: green;
+        }
+        h1{
+            color: white;
+        }
+        </style>
+    
 </head>
-<body style="background-color: aqua;">
+<body>
+    <video controls autoplay muted loop poster="background video">
+        <source src="https://videos.pexels.com/video-files/3141207/3141207-sd_640_360_25fps.mp4">
+    </video>
     <h1>Oral Robert Nadar</h1>
     <img src="Images/Robert.jpg" alt="Robert">
     <div class="div1">
@@ -81,10 +112,10 @@
     <div class="div2">
         <h3>Education</h3>
         <ul>
+            <li>Data Software Engineer, August 2024</li>
             <li>Bachelor in Commerce Graduated, April 2020 </li>
             <li>HSC Passing Year, April 2014 </li>
             <li>SSC Passing Year, May 2012</li>
-            <li>Data Software Engineer, August 2024</li>
         </ul>
     </div>
         <div class="div3">
@@ -170,12 +201,17 @@
 
     </div>
     <p class="p1"><b>Adress:
-        oralrobert96@gmail.com 
-        Room no 203, B wing , Vaishnavi Plaza, Opp. Moreshwar complex, Samarth Nagar, Diva, Mumbai, India - 400612 </b></p>
-        <p>    
+        <span style="color: green;">oralrobert96@gmail.com
+        Room no 203, B wing , Vaishnavi Plaza, Opp. Moreshwar complex, Samarth Nagar, Diva, Mumbai, India - 400612 </span></b></p>
+        <p>   
+            <div> 
     <h2>Declaration</h2>
     I, R. Oral Robert, hereby declare that the information contained herein is true and correct to the best of my knowledge and belief.</p> 
         <b>R. Oral Robert</b> 
         <b>Place: INDIA</b> 
+    </div>
+        <a href="https://www.youtube.com/watch?v=X3paOmcrTjQ"><button type="button">Introduction for data science</button></a>
+        <a href="contact me.html"><button type="button">Contact me</button></a>
+        <a href="sam.html"><button type="button">Log in</button></a>
 </body>
 </html>
