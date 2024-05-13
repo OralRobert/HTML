@@ -2,45 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
         .div1{
-            background-color: rgb(16, 11, 11);
-            width: 50%;
-            color: white;
+            background-color: white;
+            width: 70%;
+            color: black;
             text-align: justify;
+            background-image: conic-gradient(rgb(79, 224, 125) 85deg,rgb(223, 223, 15) 360deg,rgb(156, 71, 71) 50deg );
         }
         .div2{
-            background-color: rgb(11, 8, 8);
-            color: white;
-            width: 29%;
+            background-color: white;
+            color: black;
+            width: 39%;
+            margin-left: 15%;
+            background-image: conic-gradient(rgb(79, 224, 125) 85deg,rgb(223, 223, 15) 360deg,rgb(156, 71, 71) 50deg );
         }
         .div3{
-            background-color: rgb(10, 8, 8);
-            color: white;
-            width: 83%;
+            background-color: white;
+            color: black;
+            width: 35%;
+            margin-left: 15%;
+            background-image: conic-gradient(rgb(79, 224, 125) 85deg,rgb(223, 223, 15) 360deg,rgb(221, 38, 38) 90deg );
         }
         .div4{
-            background-color: rgb(7, 6, 6);
-            color: white;
+            background-color: white;
+            color: black;
             width: 21%;
+            margin-left: 15%;
+            background-image: conic-gradient(rgb(79, 224, 125) 85deg,rgb(223, 223, 15) 360deg,rgb(158, 21, 21) 50deg );
         }
         .div5{
-            background-color: rgb(12, 10, 10);
-            color: white;
-            width: 10%;
-        }
-        .div6{
-            background-color: rgb(10, 8, 8);
-            color: white;
+            background-color: white;
+            color: black;
             width: 20%;
-        }
-        .div7{
-            background-color: rgb(7, 7, 8);
-            color: white;
-            text-align: justify;
-            width: 33%;
+            margin-left: 15%;
+            background-image: conic-gradient(rgb(79, 224, 125) 85deg,rgb(223, 223, 15) 360deg,rgb(156, 71, 71) 50deg );
         }
         .p1{
             text-align: justify;
@@ -48,14 +46,12 @@
             color: green;
         }
         img{
-            float:right;
-            position:sticky;
-            right: 200px;
-            bottom: 75px;
-            background-color: aquamarine;
             width: 195px;
             height: 250px;
-            transform: rotate(-360deg);
+            margin-left: 3%;
+            margin-top: 3%;
+            border-radius: 60%;
+
         }
         img:hover{
             transform: scale(1.5,1.5);
@@ -64,59 +60,108 @@
             display: block;
         }
         h3{
-            color: blanchedalmond;
+            color: black;
            
         }
         button{
             border: none;
-            background: #045f71;
+            background: #087fb2;
             padding: 10px 60px;
-            color: white;
+            color: rgb(240, 242, 244);
             
         }
-        button:hover{
-            border: 2px solid green;
-        }
-        video{
-            position: absolute;
-            top: 0;
-            z-index: -1;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            position: absolute;
-            top: 0;
-            z-index: 1;
+        .but,button:hover{
+            border: 2px solid rgb(11, 166, 233);
         }
         div{
             color: green;
         }
         h1{
-            color: white;
+            color: blanchedalmond;
+            margin-top: -3%;
+        }
+        .div6{
+            margin-left: 45%;
+            
+        }
+        .div7{
+            margin-left: 25%;
+            margin-top: -20%;
+        }
+        .but,.fixed{
+            height: 80px;
+            border: 2px solid rgb(132, 20, 10);
+            background-color: rgb(233, 243, 236);
+            text-align: center;
+            color: black;
+            position: fixed;
+            top: 160px;
+            right: -75px;
+            rotate: 45deg;
+        }
+        table,th,td{
+            border: 5px groove rgb(6, 6, 6);
+            border-collapse: collapse;
         }
         </style>
     
 </head>
-<body>
-    <video controls autoplay muted loop poster="background video">
-        <source src="https://videos.pexels.com/video-files/3141207/3141207-sd_640_360_25fps.mp4">
-    </video>
+<body background="Images/Gif.gif" style="background-size:100%; height:100%;">
+    <div class="div6">
+    <a href="https://www.youtube.com/watch?v=X3paOmcrTjQ"><button type="button">Introduction for data science</button></a>
+        <a href="contact me.html"><button type="button">Contact me</button></a>
+        <a href="sam.html"><button type="button">Log in</button></a>
+    </div>
     <h1>Oral Robert Nadar</h1>
     <img src="Images/Robert.jpg" alt="Robert">
+    <div class="div7">
     <div class="div1">
+
+
+        <div class="fixed">
+            <button class="but" onclick="time('Free class')"><h2>Free class</h2></button>
+
+            <table id="tb">
+                <tr>
+                    <th colspan="4">Days(Monday to thursday)</th>
+                </tr>
+                <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>wednesday</th>
+                    <th>Thursday</th>
+                </tr>
+                
+            </table>
+            <script>
+                function time(type){
+                    var datatime = ['5pm to 7pm','4pm to 6pm','4pm to 6pm','10am to 12pm']
+                    var table = document.getElementById('tb');
+                    var row = table.insertRow();
+                    var cell;
+
+                    for(i=0; i<datatime.length;i++){
+                        cell = row.insertCell();
+                        cell.innerHTML = datatime[i]
+                    }
+                    }
+                    
+                
+            </script>
+
+        </div>
+
        <h3>ABOUT ME</h3>
         To build a strong and meaningful career that would help me explore different  aspects of Information technology.Developed communication & interpersonal skills, strong analytical skills & problem solving.Result oriented responsible professional with a matured approach and able to make an effective contribution to the performance of a team with good leadership and  motivating capabilities. 
     </div>
     <div class="div2">
         <h3>Education</h3>
-        <ul>
+        <ol>
             <li>Data Software Engineer, August 2024</li>
             <li>Bachelor in Commerce Graduated, April 2020 </li>
             <li>HSC Passing Year, April 2014 </li>
             <li>SSC Passing Year, May 2012</li>
-        </ul>
+        </ol>
     </div>
         <div class="div3">
             <h3>Work Experience</h3>
@@ -126,80 +171,45 @@
                 <li>2016 to 2017 10 Months experience</li>
                 <li>Process: HDFC LWCC Process</li>
                 <li>Designation: Sales Consultant</li>
-                
-                <li>Service in Brief</li></ul>
-                <ol>
-                   <li> Maintenance of customer / Associates databases. </li>
-                   <li>Retrieve documents and payments online from the client.</li> 
-                   <li>Analyzing documents for client eligibility. </li>
-                   <li>Handling customer complaints and grievance. </li>
-        </ol>
+            </ul>
             <li><h4>5 paisa</h4></li>
             <ul>
                 <li>2021 to 2022 1 year 5 Months Experience </li>
                 <li>Process : Sales Department</li>
                 <li>Designation : Customer Care Executive</li>
-                
-                <li>Service in Brief</li></ul>
-                <ol>
-                   <li>Retrieving clients documents analyzing the documents for further process.</li>
-                   <li>Mailing the eligible documents to the operations department to open clients demat account.</li> 
-                   <li>Completing the other additional tasks given by the superiors and reporting to the manager.</li>
-            </ol>
                   </ul>
                   <li><h4>Fujitec</h4></li>
             <ul>
                 <li>2023 to 2024</li>
                 <li>Process : Sales Department</li>
                 <li>Designation: Contract Sales person</li>
-                
-                <li>Service in Brief</li></ul>
-                <ol>
-                   <li>Analyzing sites & locations in order to generate leads & meeting with the clients. - To visit several locations/places in order to do site Survey.</li>
-                   <li>Meeting with the clients to give a product proposal.</li> 
-                   <li>Maintaining Clients records on regular basis and mailing to the head office.</li>
-            </ol>
                   </ul>
+            <li><h4>Zion Infotech</h4></li>
+            <ul>2024 to present</ul>
+            <ul>Process : Web Designing</ul>
+            <ul>Designation : Junior Web Designer</ul>
+        </ol>
                   
     </div>
     <div class="div4">
         <h3>skills</h3>
-        <ul>
+        <ol>
             <li>Leadership and supervisory</li>
             <li>Ethic Adaptability & Flexibility</li>
             <li>Team work</li>
-            <li>Good listening skill</li>
-            <li>Communication skill</li>
-        </ul>
-    </div>
-    <div class="div5">
-        <h3>Languages</h3>
-        <ol>
-            <li>Tamil</li>
-            <li>Hindi</li>
-            <li>English</li>
+            <li>Communication</li>
         </ol>
     </div>
-    <div class="div6">
+    <div class="div5">
         <h3>Software and technical skills</h3>
-        <ul>
+        <ol>
             <li>Tally prime</li>
             <li>Foundation in SQL</li>
             <li>HTML & CSS</li>
             <li>MS Office</li>
-        </ul>
+        </ol>
     </div>
-    <div class="div7">
-        <h3>Personal Information</h3>
-        <ul>
-            <li>Father Name - Paul Reklan Durai Nadar</li>
-            <li>Mother name - Puthu Malar Nadar</li>
-            <li>Birth date  - August 17,1996</li>
-            <li>Nationality - INDIAN</li>
-            <li>Gender      - Male</li>
-        </ul>
-
-    </div>
+</div>
     <p class="p1"><b>Adress:
         <span style="color: green;">oralrobert96@gmail.com
         Room no 203, B wing , Vaishnavi Plaza, Opp. Moreshwar complex, Samarth Nagar, Diva, Mumbai, India - 400612 </span></b></p>
@@ -210,8 +220,5 @@
         <b>R. Oral Robert</b> 
         <b>Place: INDIA</b> 
     </div>
-        <a href="https://www.youtube.com/watch?v=X3paOmcrTjQ"><button type="button">Introduction for data science</button></a>
-        <a href="contact me.html"><button type="button">Contact me</button></a>
-        <a href="sam.html"><button type="button">Log in</button></a>
 </body>
 </html>
